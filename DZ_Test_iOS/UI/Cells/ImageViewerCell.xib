@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageViewerCell" id="gTV-IL-0wX" customClass="ImageViewerCell" customModule="DZ_Test_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgX-pQ-KNn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load" translatesAutoresizingMaskIntoConstraints="NO" id="lOw-GN-Ti6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lOw-GN-Ti6" firstAttribute="leading" secondItem="AgX-pQ-KNn" secondAttribute="leading" id="T5n-S8-3Np"/>
+                            <constraint firstItem="lOw-GN-Ti6" firstAttribute="top" secondItem="AgX-pQ-KNn" secondAttribute="top" id="VPy-hD-gab"/>
+                            <constraint firstAttribute="trailing" secondItem="lOw-GN-Ti6" secondAttribute="trailing" id="aN0-Ah-H67"/>
+                            <constraint firstAttribute="bottom" secondItem="lOw-GN-Ti6" secondAttribute="bottom" id="iuk-Su-c3C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AgX-pQ-KNn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5CD-H3-RrH"/>
+                <constraint firstAttribute="bottom" secondItem="AgX-pQ-KNn" secondAttribute="bottom" id="94v-gl-GNm"/>
+                <constraint firstItem="AgX-pQ-KNn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZCE-3e-B4m"/>
+                <constraint firstAttribute="trailing" secondItem="AgX-pQ-KNn" secondAttribute="trailing" id="bL5-L0-A1w"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="productImageView" destination="lOw-GN-Ti6" id="B6r-aA-fiZ"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="26.785714285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="load" width="50" height="50"/>
+    </resources>
+</document>
